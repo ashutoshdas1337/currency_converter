@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency_Converter</title>
 </head>
 <body>
-    <script src="index.js"></script>
+    <label for="baseCurrency">Base Currency:</label>
+    <select id="baseCurrency"></select>
+
+    <label for="targetCurrency">Target Currency:</label>
+    <select id="targetCurrency"></select>
+
+    <input type="number" id="amount" placeholder="Enter amount" />
+    <button onclick="getRate()">Convert</button>
+    <div id="showAmount"></div>
+
 </body>
+<script src="index.js"></script>
 </html>
